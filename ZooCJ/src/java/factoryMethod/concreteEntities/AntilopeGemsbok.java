@@ -18,6 +18,7 @@ public class AntilopeGemsbok implements Animal{
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.fondoshd.mx/wallpapers/antilope-gemsbok-animal-wallpaper-other-1314.jpg\"");
+        data.add("Antilope de Gemsbok");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

@@ -18,7 +18,8 @@ public class PinguinoDeHumboldt implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://test.cdn.download.ams.birds.cornell.edu/api/v1/asset/116084691/1800");
+        data.add("\"https://test.cdn.download.ams.birds.cornell.edu/api/v1/asset/116084691/1800\"");
+        data.add("Pinguino De Humboldt");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Aves");

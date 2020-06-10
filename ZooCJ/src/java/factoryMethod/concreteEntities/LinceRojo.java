@@ -18,7 +18,8 @@ public class LinceRojo implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.animalesexoticos.org/wp-content/uploads/2020/02/lince-rojo.jpg");
+        data.add("\"https://www.animalesexoticos.org/wp-content/uploads/2020/02/lince-rojo.jpg\"");
+        data.add("Lince Rojo");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

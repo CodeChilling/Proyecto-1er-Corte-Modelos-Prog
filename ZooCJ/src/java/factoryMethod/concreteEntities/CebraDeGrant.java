@@ -18,6 +18,7 @@ public class CebraDeGrant implements Animal{
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.reserveafricainesigean.fr/content/uploads/2017/04/fiche-grant.jpg\"");
+        data.add("Cebra De Grant");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

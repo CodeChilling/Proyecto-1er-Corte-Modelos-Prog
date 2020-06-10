@@ -18,7 +18,8 @@ public class Orangutan implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/12/17/Recortada/img_fcastanyer_20170215-102351_imagenes_lv_terceros_orangutan-kwKH-U453613798289iF-992x558@LaVanguardia-Web.jpg");
+        data.add("\"https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/12/17/Recortada/img_fcastanyer_20170215-102351_imagenes_lv_terceros_orangutan-kwKH-U453613798289iF-992x558@LaVanguardia-Web.jpg\"");
+        data.add("Orangutan");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

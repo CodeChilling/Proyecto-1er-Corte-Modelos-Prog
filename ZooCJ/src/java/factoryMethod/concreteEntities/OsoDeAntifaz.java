@@ -18,7 +18,8 @@ public class OsoDeAntifaz implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.ososwiki.com/Imagenes/osos-de-anteojos.jpg");
+        data.add("\"https://www.ososwiki.com/Imagenes/osos-de-anteojos.jpg\"");
+        data.add("Oso De Antifaz");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

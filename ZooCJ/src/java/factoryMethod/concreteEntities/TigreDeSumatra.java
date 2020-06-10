@@ -18,7 +18,8 @@ public class TigreDeSumatra implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.bioenciclopedia.com/wp-content/uploads/2016/12/tigre_de_Sumatra.jpg");
+        data.add("\"https://www.bioenciclopedia.com/wp-content/uploads/2016/12/tigre_de_Sumatra.jpg\"");
+        data.add("Tigre De Sumatra");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

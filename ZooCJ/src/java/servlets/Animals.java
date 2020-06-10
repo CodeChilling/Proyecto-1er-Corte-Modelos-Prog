@@ -37,15 +37,16 @@ public class Animals extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         int aux=0;
-        int auxA=1;
-        int auxB=7;
+        int auxBeta=1;
+        int auxA=2;
+        int auxB=9;
         Researcher employ = new Guide();
         ArrayList example = new ArrayList<>();
         
         try (PrintWriter out = response.getWriter()) {
             
             for(int i=0;i<12;i++){
-                for(int j=0;j<8;j++){
+                for(int j=0;j<9;j++){
                     example.add(employ.accessToAnimalData(i).getData().get(j));
                 }                
             }
@@ -88,21 +89,19 @@ public class Animals extends HttpServlet {
             out.println("<h2 class=\"section__titulo\">CARACTERISTICAS</h2>");
             for(int i=0;i<12;i++){
                 out.println("<div class=\"cursos__columna\">");
-                if(i==0 || i%8==0){
-                    out.println("<img src="+example.get(aux) + "alt=\"\" class=\"cursos__img\">");
-                    out.println("<img src=\"https://www.fondoshd.mx/wallpapers/antilope-gemsbok-animal-wallpaper-other-1314.jpg\" alt=\"\" class=\"cursos__img\">");
-                }
-                aux=aux+8;
+                out.println("<img src="+example.get(aux) + " alt=\"\" class=\"cursos__img\">");
+                aux=aux+9;
                 out.println("<div class=\"cursos__descripcion\">");
-                out.println("<h2 class=\"cursos__titulo\">seleccionado</h2>");
+                out.println("<h2 class=\"cursos__titulo\">"+example.get(auxBeta)+"</h2>");
+                auxBeta=auxBeta+9;
                 out.println("<div class=\"cursos__txt\">");
                 for(int j=auxA;j<auxB;j++){
-                    out.println(example.get(j));
+                    out.println("<P>" + example.get(j)+"</p>");
                 }
                 out.println("</div>");
                 out.println("</div>");
-                auxA=auxA+8;
-                auxB=auxB+8;
+                auxA=auxA+9;
+                auxB=auxB+9;
                 out.println("</div>");
             }
             out.println("</section>");

@@ -18,7 +18,8 @@ public class Hipopotamo implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.oasysparquetematico.com/wp-content/uploads/2019/03/shutterstock_1155910990.jpg");
+        data.add("\"https://www.oasysparquetematico.com/wp-content/uploads/2019/03/shutterstock_1155910990.jpg\"");
+        data.add("Hipopotamo");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

@@ -18,7 +18,8 @@ public class GorilaDeTierrasBajas implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://www.gorillas-world.com/wp-content/uploads/gorila_occidental.jpg");
+        data.add("\"https://www.gorillas-world.com/wp-content/uploads/gorila_occidental.jpg\"");
+        data.add("Gorila De TierrasBajas");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");

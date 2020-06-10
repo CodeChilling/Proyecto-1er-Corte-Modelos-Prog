@@ -18,7 +18,8 @@ public class OsoPolar implements Animal{
     @Override
      public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("https://geoinnova.org/blog-territorio/wp-content/uploads/2016/11/oso-polar2-800-1280x720.jpg");
+        data.add("\"https://geoinnova.org/blog-territorio/wp-content/uploads/2016/11/oso-polar2-800-1280x720.jpg\"");
+        data.add("Oso Polar");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");
         data.add("Class: Mammalia");
