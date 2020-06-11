@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package builder.products;
 
 /**
@@ -11,10 +10,11 @@ package builder.products;
  * @author jackl
  */
 public class Zone {
-    private String image="";
-    private String inCharge="";
-    private String areas="";
-    private String description="";
+
+    private String image = "";
+    private String inCharge = "";
+    private String areas = "";
+    private String description = "";
 
     public String getInCharge() {
         return inCharge;
@@ -39,8 +39,7 @@ public class Zone {
     public void setAreas(String areas) {
         this.areas = areas;
     }
-    
-    
+
     public String getImage() {
         return image;
     }
@@ -48,5 +47,5 @@ public class Zone {
     public void setImage(String image) {
         this.image = image;
     }
-    
+
 }

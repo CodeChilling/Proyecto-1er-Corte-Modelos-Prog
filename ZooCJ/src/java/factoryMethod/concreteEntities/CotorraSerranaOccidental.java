@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class CotorraSerranaOccidental implements Animal{
+public class CotorraSerranaOccidental implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://test.cdn.download.ams.birds.cornell.edu/api/v1/asset/49035301/1200\"");
         data.add("Cotorra Serrana Occidental");
@@ -29,5 +28,5 @@ public class CotorraSerranaOccidental implements Animal{
         data.add("Specie: Rhynchopsitta pachyrhyncha");
         return data;
     }
-    
+
 }

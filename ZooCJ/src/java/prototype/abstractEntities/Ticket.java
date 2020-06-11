@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package prototype.abstractEntities;
 
 /**
@@ -11,8 +10,6 @@ package prototype.abstractEntities;
  * @author jackl
  */
 public interface Ticket {
-    
-    
 
     public String getBenefits();
 
@@ -31,7 +28,7 @@ public interface Ticket {
     public String getOutTime();
 
     public void setOutTime(String outTime);
-    
+
     public Ticket clone();
-    
+
 }

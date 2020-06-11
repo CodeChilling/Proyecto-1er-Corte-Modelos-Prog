@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class Hipopotamo implements Animal{
+public class Hipopotamo implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.oasysparquetematico.com/wp-content/uploads/2019/03/shutterstock_1155910990.jpg\"");
         data.add("Hipopotamo");
@@ -29,5 +28,5 @@ public class Hipopotamo implements Animal{
         data.add("Specie: Hippopotamus amphibius");
         return data;
     }
-    
+
 }

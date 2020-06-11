@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class LinceRojo implements Animal{
+public class LinceRojo implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.animalesexoticos.org/wp-content/uploads/2020/02/lince-rojo.jpg\"");
         data.add("Lince Rojo");
@@ -29,5 +28,5 @@ public class LinceRojo implements Animal{
         data.add("Specie: Lynx rufus");
         return data;
     }
-    
+
 }

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class Orangutan implements Animal{
+public class Orangutan implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/12/17/Recortada/img_fcastanyer_20170215-102351_imagenes_lv_terceros_orangutan-kwKH-U453613798289iF-992x558@LaVanguardia-Web.jpg\"");
         data.add("Orangutan");
@@ -29,5 +28,5 @@ public class Orangutan implements Animal{
         data.add("Specie: Pongo abelii");
         return data;
     }
-    
+
 }

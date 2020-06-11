@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package servlets;
 
 import builder.abstractEntities.Sector;
@@ -22,7 +21,9 @@ import javax.servlet.http.HttpServletResponse;
  * @author jackl
  */
 public class Instalations extends HttpServlet {
+
     Director guide = new Director();
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -35,8 +36,7 @@ public class Instalations extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        
+
         Sector east = new eastWing();
         guide.buildInfo(east);
         Zone area1 = east.getZone();
@@ -55,8 +55,7 @@ public class Instalations extends HttpServlet {
         //aqui van los datos de la zona norte, usando metodos del objeto area
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<meta charset=\"UTF-8\">");
@@ -69,66 +68,65 @@ public class Instalations extends HttpServlet {
             out.println("</head>");
             out.println("<header class=\"header\">");
             out.println("</header>");
-            out.println("<body>\n" +
-                        "    <div class=\"banner\">\n" +
-                        "        <span class=\"opacar\">\n" +
-                        "                    <img src=\"https://images.unsplash.com/photo-1565867496556-e6f84b777af8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80\"  height = \"100%\"  width=\"100%\" alt=\"\">\n" +
-                        "                </span>\n" +
-                        "        <div class=\"contenedor\">\n" +
-                        "            <h2 class=\"banner__titulo\">Instalaciones y Cargos</h2>\n" +
-                        "            <p class=\"banner__txt\">\n" +
-                        "        </div>\n" +
-                        "    </div>\n" +
-                        "    <main class=\"main\">\n" +
-                        "        <div class=\"contenedor\">\n" +
-                        "\n" +
-                        "            <section class=\"cursos\">\n" +
-                        "                <h2 class=\"section__titulo\">PERSONAL</h2>\n" +
-                        "                <div class=\"cursos__columna\">\n" +
-                        "                    <img src="+area1.getImage()+" alt=\"\" class=\"cursos__img\">\n" +
-                        "                    <div class=\"cursos__descripcion\">\n" +
-                        "                        <h2 class=\"cursos__titulo\">"+area1.getInCharge()+"</h2>\n" +
-                                "                        <h3 class=\"cursos__txt\">"+area1.getAreas()+"</h3>\n" +
-                        "                        <div class=\"cursos__txt\">\n" +area1.getDescription()+
-              
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"cursos__columna\">\n" +
-                        "                    <img src="+area2.getImage()+" alt=\"\" class=\"cursos__img\">\n" +
-                        "                    <div class=\"cursos__descripcion\">\n" +
-                        "                        <h2 class=\"cursos__titulo\">"+area2.getInCharge()+"</h2>\n" +
-                        "                        <h3 class=\"cursos__txt\">"+area2.getAreas()+"</h3>\n" +
-                        "                        <div class=\"cursos__txt\">\n" +area2.getDescription()+
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"cursos__columna\">\n" +
-                        "                    <img src="+area3.getImage()+" alt=\"\" class=\"cursos__img\">\n" +
-                        "                    <div class=\"cursos__descripcion\">\n" +
-                        "                        <h2 class=\"cursos__titulo\">"+area3.getInCharge()+"</h2>\n" +
-                        "                        <h3 class=\"cursos__txt\">"+area3.getAreas()+"</h3>\n" +
-                        "                        <div class=\"cursos__txt\">\n" +area3.getDescription()+
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"cursos__columna\">\n" +
-                        "                    <img src="+area4.getImage()+" alt=\"\" class=\"cursos__img\">\n" +
-                        "                    <div class=\"cursos__descripcion\">\n" +
-                        "                        <h2 class=\"cursos__titulo\">"+area4.getInCharge()+"</h2>\n" +
-                        "                        <h3 class=\"cursos__txt\">"+area4.getAreas()+"</h3>\n" +
-                        "                        <div class=\"cursos__txt\">\n" +area4.getDescription()+
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </div>\n" +               
-                        "            </section>\n" +
-                        "\n" +
-                        "        </div>\n" +
-                        "    </main>\n" +
-                        "</body>");
-            
+            out.println("<body>\n"
+                    + "    <div class=\"banner\">\n"
+                    + "        <span class=\"opacar\">\n"
+                    + "                    <img src=\"https://images.unsplash.com/photo-1565867496556-e6f84b777af8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80\"  height = \"100%\"  width=\"100%\" alt=\"\">\n"
+                    + "                </span>\n"
+                    + "        <div class=\"contenedor\">\n"
+                    + "            <h2 class=\"banner__titulo\">Instalaciones y Cargos</h2>\n"
+                    + "            <p class=\"banner__txt\">\n"
+                    + "        </div>\n"
+                    + "    </div>\n"
+                    + "    <main class=\"main\">\n"
+                    + "        <div class=\"contenedor\">\n"
+                    + "\n"
+                    + "            <section class=\"cursos\">\n"
+                    + "                <h2 class=\"section__titulo\">PERSONAL</h2>\n"
+                    + "                <div class=\"cursos__columna\">\n"
+                    + "                    <img src=" + area1.getImage() + " alt=\"\" class=\"cursos__img\">\n"
+                    + "                    <div class=\"cursos__descripcion\">\n"
+                    + "                        <h2 class=\"cursos__titulo\">" + area1.getInCharge() + "</h2>\n"
+                    + "                        <h3 class=\"cursos__txt\">" + area1.getAreas() + "</h3>\n"
+                    + "                        <div class=\"cursos__txt\">\n" + area1.getDescription()
+                    + "                        </div>\n"
+                    + "                    </div>\n"
+                    + "                </div>\n"
+                    + "                <div class=\"cursos__columna\">\n"
+                    + "                    <img src=" + area2.getImage() + " alt=\"\" class=\"cursos__img\">\n"
+                    + "                    <div class=\"cursos__descripcion\">\n"
+                    + "                        <h2 class=\"cursos__titulo\">" + area2.getInCharge() + "</h2>\n"
+                    + "                        <h3 class=\"cursos__txt\">" + area2.getAreas() + "</h3>\n"
+                    + "                        <div class=\"cursos__txt\">\n" + area2.getDescription()
+                    + "                        </div>\n"
+                    + "                    </div>\n"
+                    + "                </div>\n"
+                    + "                <div class=\"cursos__columna\">\n"
+                    + "                    <img src=" + area3.getImage() + " alt=\"\" class=\"cursos__img\">\n"
+                    + "                    <div class=\"cursos__descripcion\">\n"
+                    + "                        <h2 class=\"cursos__titulo\">" + area3.getInCharge() + "</h2>\n"
+                    + "                        <h3 class=\"cursos__txt\">" + area3.getAreas() + "</h3>\n"
+                    + "                        <div class=\"cursos__txt\">\n" + area3.getDescription()
+                    + "                        </div>\n"
+                    + "                    </div>\n"
+                    + "                </div>\n"
+                    + "                <div class=\"cursos__columna\">\n"
+                    + "                    <img src=" + area4.getImage() + " alt=\"\" class=\"cursos__img\">\n"
+                    + "                    <div class=\"cursos__descripcion\">\n"
+                    + "                        <h2 class=\"cursos__titulo\">" + area4.getInCharge() + "</h2>\n"
+                    + "                        <h3 class=\"cursos__txt\">" + area4.getAreas() + "</h3>\n"
+                    + "                        <div class=\"cursos__txt\">\n" + area4.getDescription()
+                    + "                        </div>\n"
+                    + "                    </div>\n"
+                    + "                </div>\n"
+                    + "            </section>\n"
+                    + "\n"
+                    + "        </div>\n"
+                    + "    </main>\n"
+                    + "</body>");
+
             out.println("</html>");
-            
+
         }
     }
 
@@ -163,12 +161,11 @@ public class Instalations extends HttpServlet {
         //aqui van los datos de la zona norte, usando metodos del objeto area
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Instalations</title>");            
+            out.println("<title>Servlet Instalations</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Instalations at " + request.getContextPath() + "</h1>");

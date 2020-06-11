@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package servlets;
 
 import factoryMethod.abstractEntities.Animal;
@@ -35,32 +34,28 @@ public class Animals extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        int aux=0;
-        int auxBeta=1;
-        int auxA=2;
-        int auxB=9;
+
+        int aux = 0;
+        int auxBeta = 1;
+        int auxA = 2;
+        int auxB = 9;
         Researcher employ = new Guide();
         ArrayList example = new ArrayList<>();
-        
+
         try (PrintWriter out = response.getWriter()) {
-            
-            for(int i=0;i<12;i++){
-                for(int j=0;j<9;j++){
+
+            for (int i = 0; i < 12; i++) {
+                for (int j = 0; j < 9; j++) {
                     example.add(employ.accessToAnimalData(i).getData().get(j));
-                }                
+                }
             }
-            
-            
-           
+
             /*
-            para acceder a los datos de los animales vamos a hacer esto por ejemplo:
-            animals.get(i).get(j);
-            con i accedemos al primer animal y con j al primer dato del animal que esta en i, 
-            se necesitaría un for (posiblemente) para acceder a todos los datos y a todos los animales
-            */
-            
-            
+             para acceder a los datos de los animales vamos a hacer esto por ejemplo:
+             animals.get(i).get(j);
+             con i accedemos al primer animal y con j al primer dato del animal que esta en i, 
+             se necesitaría un for (posiblemente) para acceder a todos los datos y a todos los animales
+             */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<meta charset=\"UTF-8\">");
@@ -87,21 +82,21 @@ public class Animals extends HttpServlet {
             out.println("<div class=\"contenedor\">");
             out.println("<section class=\"cursos\">");
             out.println("<h2 class=\"section__titulo\">CARACTERISTICAS</h2>");
-            for(int i=0;i<12;i++){
+            for (int i = 0; i < 12; i++) {
                 out.println("<div class=\"cursos__columna\">");
-                out.println("<img src="+example.get(aux) + " alt=\"\" class=\"cursos__img\">");
-                aux=aux+9;
+                out.println("<img src=" + example.get(aux) + " alt=\"\" class=\"cursos__img\">");
+                aux = aux + 9;
                 out.println("<div class=\"cursos__descripcion\">");
-                out.println("<h2 class=\"cursos__titulo\">"+example.get(auxBeta)+"</h2>");
-                auxBeta=auxBeta+9;
+                out.println("<h2 class=\"cursos__titulo\">" + example.get(auxBeta) + "</h2>");
+                auxBeta = auxBeta + 9;
                 out.println("<div class=\"cursos__txt\">");
-                for(int j=auxA;j<auxB;j++){
-                    out.println("<P>" + example.get(j)+"</p>");
+                for (int j = auxA; j < auxB; j++) {
+                    out.println("<P>" + example.get(j) + "</p>");
                 }
                 out.println("</div>");
                 out.println("</div>");
-                auxA=auxA+9;
-                auxB=auxB+9;
+                auxA = auxA + 9;
+                auxB = auxB + 9;
                 out.println("</div>");
             }
             out.println("</section>");
@@ -127,30 +122,23 @@ public class Animals extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
         try (PrintWriter out = response.getWriter()) {
-           
-            
-           
+
             /*
-            para acceder a los datos de los animales vamos a hacer esto por ejemplo:
-            animals.get(i).get(j);
-            con i accedemos al primer animal y con j al primer dato del animal que esta en i, 
-            se necesitaría un for (posiblemente) para acceder a todos los datos y a todos los animales
-            */
-            
-            
+             para acceder a los datos de los animales vamos a hacer esto por ejemplo:
+             animals.get(i).get(j);
+             con i accedemos al primer animal y con j al primer dato del animal que esta en i, 
+             se necesitaría un for (posiblemente) para acceder a todos los datos y a todos los animales
+             */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Animals</title>");            
+            out.println("<title>Servlet Animals</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Animals at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
-            
-            
-            
-            
+
         }
     }
 

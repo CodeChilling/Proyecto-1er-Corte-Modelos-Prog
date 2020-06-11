@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,9 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class CebraDeGrant implements Animal{
+public class CebraDeGrant implements Animal {
+
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.reserveafricainesigean.fr/content/uploads/2017/04/fiche-grant.jpg\"");
         data.add("Cebra De Grant");

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class GorilaDeTierrasBajas implements Animal{
+public class GorilaDeTierrasBajas implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.gorillas-world.com/wp-content/uploads/gorila_occidental.jpg\"");
         data.add("Gorila De TierrasBajas");
@@ -29,5 +28,5 @@ public class GorilaDeTierrasBajas implements Animal{
         data.add("Specie: Gorilla gorilla");
         return data;
     }
-    
+
 }

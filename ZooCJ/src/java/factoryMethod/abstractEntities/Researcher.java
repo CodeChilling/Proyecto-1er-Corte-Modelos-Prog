@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.abstractEntities;
 
 /**
@@ -11,6 +10,7 @@ package factoryMethod.abstractEntities;
  * @author jackl
  */
 public interface Researcher {
+
     public Animal accessToAnimalData(int index);
-    
+
 }

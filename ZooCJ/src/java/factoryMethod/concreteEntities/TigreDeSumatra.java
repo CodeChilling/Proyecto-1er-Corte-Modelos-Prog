@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author jackl
  */
-public class TigreDeSumatra implements Animal{
+public class TigreDeSumatra implements Animal {
 
     @Override
-    public ArrayList getData(){
+    public ArrayList getData() {
         ArrayList data = new ArrayList<String>();
         data.add("\"https://www.bioenciclopedia.com/wp-content/uploads/2016/12/tigre_de_Sumatra.jpg\"");
         data.add("Tigre De Sumatra");
@@ -29,5 +28,5 @@ public class TigreDeSumatra implements Animal{
         data.add("Specie: Panthera tigris sumatrae");
         return data;
     }
-    
+
 }

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.abstractEntities;
 
 import java.util.ArrayList;
@@ -13,5 +12,6 @@ import java.util.ArrayList;
  * @author jackl
  */
 public interface Animal {
+
     public ArrayList getData();
 }

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package factoryMethod.concreteEntities;
 
 import factoryMethod.abstractEntities.Animal;
@@ -13,21 +12,21 @@ import factoryMethod.abstractEntities.Researcher;
  *
  * @author jackl
  */
-public class Guide implements Researcher{
+public class Guide implements Researcher {
 
     @Override
     public Animal accessToAnimalData(int index) {
-        switch(index){
+        switch (index) {
             case 0:
-                return new AntilopeGemsbok();  
+                return new AntilopeGemsbok();
             case 1:
-                return new CebraDeGrant();  
+                return new CebraDeGrant();
             case 2:
                 return new CondorAndino();
             case 3:
                 return new CotorraSerranaOccidental();
             case 4:
-                return new GorilaDeTierrasBajas();  
+                return new GorilaDeTierrasBajas();
             case 5:
                 return new Hipopotamo();
             case 6:
@@ -35,7 +34,7 @@ public class Guide implements Researcher{
             case 7:
                 return new Orangutan();
             case 8:
-                return new OsoDeAntifaz();  
+                return new OsoDeAntifaz();
             case 9:
                 return new OsoPolar();
             case 10:
@@ -46,5 +45,5 @@ public class Guide implements Researcher{
                 return null;
         }
     }
-    
+
 }

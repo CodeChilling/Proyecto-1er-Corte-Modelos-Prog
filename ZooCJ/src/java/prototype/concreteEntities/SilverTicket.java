@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package prototype.concreteEntities;
 
 import prototype.abstractEntities.Ticket;
@@ -12,16 +11,14 @@ import prototype.abstractEntities.Ticket;
  *
  * @author jackl
  */
-public class SilverTicket implements Ticket{
-    
-    
-    
-    private String benefits="Ruta guiada.";
-    private String planName="Silver";
+public class SilverTicket implements Ticket {
+
+    private String benefits = "Ruta guiada.";
+    private String planName = "Silver";
     private String price = "$5 USD por persona";
     private String visiterAmmount = "";
-    private String inTime="";
-    private String outTime="";
+    private String inTime = "";
+    private String outTime = "";
 
     @Override
     public String getVisiterAmmount() {
@@ -68,7 +65,6 @@ public class SilverTicket implements Ticket{
         return price;
     }
 
-    
     @Override
     public Ticket clone() {
         Ticket deepSave = new SilverTicket();
@@ -77,5 +73,5 @@ public class SilverTicket implements Ticket{
         deepSave.setOutTime(this.getOutTime());
         return deepSave;
     }
-    
+
 }

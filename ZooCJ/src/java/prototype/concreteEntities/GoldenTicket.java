@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package prototype.concreteEntities;
 
 import prototype.abstractEntities.Ticket;
@@ -12,16 +11,14 @@ import prototype.abstractEntities.Ticket;
  *
  * @author jackl
  */
-public class GoldenTicket implements Ticket{
-    
-    private String benefits="Ruta guiada y acceso ilimitado a zonas de descanso.";
-    private String planName="Golden";
+public class GoldenTicket implements Ticket {
+
+    private String benefits = "Ruta guiada y acceso ilimitado a zonas de descanso.";
+    private String planName = "Golden";
     private String price = "$10 USD por persona";
     private String visiterAmmount = "";
-    private String inTime="";
-    private String outTime="";
-    
-    
+    private String inTime = "";
+    private String outTime = "";
 
     @Override
     public Ticket clone() {
@@ -77,8 +74,4 @@ public class GoldenTicket implements Ticket{
         return price;
     }
 
-    
-    
-    
-    
 }

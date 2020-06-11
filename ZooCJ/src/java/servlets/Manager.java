@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package servlets;
 
 import java.io.IOException;
@@ -31,7 +30,7 @@ public class Manager extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        switch(request.getParameter("choose_select")){
+        switch (request.getParameter("choose_select")) {
             case "1":
                 response.sendRedirect("Animals");
                 break;
@@ -58,7 +57,7 @@ public class Manager extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
         response.setContentType("text/html;charset=UTF-8");
-        
+
     }
 
     /**
