@@ -13,7 +13,12 @@ import builder.abstractEntities.Sector;
  * @author jackl
  */
 public class southWing extends Sector{
-
+    
+    @Override
+    public void imageName(){
+        this.zone.setImage("\"https://www.uniformesguadalajara.mx/wp-content/uploads/2013/10/Uniformes-Camisolas-Guadalajara-003.jpg\"");
+    }
+    
     @Override
     public void employName() {
         this.zone.setInCharge("Darío el Grande");    
@@ -21,6 +26,11 @@ public class southWing extends Sector{
     @Override
     public void areasNames() {
         this.zone.setAreas("Bosques templados");   
+    }
+
+    @Override
+    public void descriptionName() {
+        this.zone.setDescription("Egresado de la universidad Bullets, especializado en el cuidado y atencion a animales de bosques templados");
     }
     
 }

@@ -2,22 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/web/image/inicio.jpg</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/web/image/doggy.jpg</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/servlets/PlanDirector.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/builder/abstractEntities/Sector.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/servlets/SavePlan.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/servlets/Manager.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/singleton/Instance.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/factoryMethod/concreteEntities/Guide.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/factoryMethod/concreteEntities/OsoDeAntifaz.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/prototype/client/Assignator.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/servlets/Instalations.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/src/java/servlets/Animals.java</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/web/success.jsp</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/jackl/Documents/Back%20End/ZooCJ/web/index.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

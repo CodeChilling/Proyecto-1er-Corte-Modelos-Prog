@@ -66,7 +66,7 @@ public class Animals extends HttpServlet {
             out.println("<meta charset=\"UTF-8\">");
             out.println("<title>Animales</title>");
             out.println("<link rel=\"stylesheet\" href=\"css/presentation_style.css\">");
-            out.println("<link rel=\"icon\" type=\"image/png\" href=\"imagenes/gym.png\">");
+            out.println("<link rel=\"icon\" type=\"image/png\" href=\"https://img.freepik.com/vector-gratis/vector-zoologico-animal_74440-1792.jpg?size=626&ext=jpg\">");
             out.println("<meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">");
             out.println("<!--Responsive-->");
             out.println("<link href=\"https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css\" rel=\"stylesheet\">");

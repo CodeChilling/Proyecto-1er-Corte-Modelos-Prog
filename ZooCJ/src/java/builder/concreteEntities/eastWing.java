@@ -13,9 +13,17 @@ import builder.abstractEntities.Sector;
  * @author jackl
  */
 public class eastWing extends Sector{
-
     
-
+    @Override
+    public void descriptionName(){
+        this.zone.setDescription("Experto en ambientes frios, con estudios especializados en el cuidado de animales en terrenos helados");
+    }
+    
+    @Override
+    public void imageName(){
+        this.zone.setImage("\"https://image.freepik.com/foto-gratis/mecanico-feliz-que-sostiene-llave-inglesa-fondo-blanco_13339-110058.jpg\"");
+    }
+    
     @Override
     public void employName() {
        this.zone.setInCharge("Alejandro Magno");

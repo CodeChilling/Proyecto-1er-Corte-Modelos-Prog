@@ -9,8 +9,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>CoFitness</title>
-        <link rel="icon"  type="image/png" href="">
+        <title>ZooTycon</title>
+        <link rel="icon"  type="image/png" href="https://img.freepik.com/vector-gratis/vector-zoologico-animal_74440-1792.jpg?size=626&ext=jpg">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -19,7 +19,7 @@
         <div class="container">
             <form action="Manager" class="form">
                 <div class="form-header">
-                    <h1 class="form-title"><span>Animales</span></h1>
+                    <h1 class="form-title"><span>Zootycon</span></h1>
                     <h3 class="form-title"><span>¿Que deseas Ver?</span></h3>
                 </div>
 

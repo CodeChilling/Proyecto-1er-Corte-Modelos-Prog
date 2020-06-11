@@ -11,8 +11,10 @@ package builder.products;
  * @author jackl
  */
 public class Zone {
+    private String image="";
     private String inCharge="";
     private String areas="";
+    private String description="";
 
     public String getInCharge() {
         return inCharge;
@@ -22,12 +24,29 @@ public class Zone {
         this.inCharge = inCharge;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getAreas() {
         return areas;
     }
 
     public void setAreas(String areas) {
         this.areas = areas;
+    }
+    
+    
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
     
 }

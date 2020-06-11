@@ -18,7 +18,7 @@ public class CondorAndino implements Animal{
     @Override
     public ArrayList getData(){
         ArrayList data = new ArrayList<String>();
-        data.add("\"https://www.animalesexoticos.top/wp-content/uploads/2019/10/c%C3%B3ndor-andino-3.png\"");
+        data.add("\"https://static.nationalgeographic.es/files/styles/image_3200/public/2225.600x450.jpg?w=710&h=533\"");
         data.add("Condor Andino");
         data.add("Kingodm: Animalia");
         data.add("Phylum: Chordata");

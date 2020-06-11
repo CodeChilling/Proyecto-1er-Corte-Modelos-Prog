@@ -22,10 +22,12 @@ public abstract class Sector {
         this.zone = new Zone();
     }
 
-    public void setZone(Zone zone) {
+    /*public void setZone(Zone zone) {
         this.zone = zone;
-    }
+    }*/
     
+    public abstract void descriptionName();
+    public abstract void imageName();
     public abstract void employName();
     public abstract void areasNames();
     
