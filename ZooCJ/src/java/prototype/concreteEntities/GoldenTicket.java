@@ -13,9 +13,9 @@ import prototype.abstractEntities.Ticket;
  */
 public class GoldenTicket implements Ticket {
 
-    private String benefits = "Ruta guiada y acceso ilimitado a zonas de descanso.";
-    private String planName = "Golden";
-    private String price = "$10 USD por persona";
+    private final String benefits = "Ruta guiada y acceso ilimitado a zonas de descanso.";
+    private final String planName = "Golden";
+    private final String price = "$10 USD por persona";
     private String visiterAmmount = "";
     private String inTime = "";
     private String outTime = "";

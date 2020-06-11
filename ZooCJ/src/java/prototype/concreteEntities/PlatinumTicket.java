@@ -13,9 +13,9 @@ import prototype.abstractEntities.Ticket;
  */
 public class PlatinumTicket implements Ticket {
 
-    private String benefits = "Ruta guiada, acceso ilimitado a zonas de descanso, membresia club ZooCJ, ninos menores a 10 anios ingresan gratis.";
-    private String planName = "Platinum";
-    private String price = "$20 USD por persona";
+    private final String benefits = "Ruta guiada, acceso ilimitado a zonas de descanso, membresia club ZooCJ, ninos menores a 10 anios ingresan gratis.";
+    private final String planName = "Platinum";
+    private final String price = "$20 USD por persona";
     private String visiterAmmount = "";
     private String inTime = "";
     private String outTime = "";

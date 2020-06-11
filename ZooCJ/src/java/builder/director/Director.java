@@ -15,17 +15,7 @@ import builder.concreteEntities.*;
  */
 public class Director {
 
-    private Sector nuevo;
-
-    public void setSector(Sector op) {
-        nuevo = op;
-    }
-
-    public Zone getZone() {
-        return nuevo.getZone();
-    }
-
-    public static void buildInfo(Sector sector) {
+    public void buildInfo(Sector sector) {
         sector.buildZone();
         sector.imageName();
         sector.employName();

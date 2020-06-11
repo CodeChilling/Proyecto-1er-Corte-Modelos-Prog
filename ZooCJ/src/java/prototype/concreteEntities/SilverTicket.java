@@ -13,9 +13,9 @@ import prototype.abstractEntities.Ticket;
  */
 public class SilverTicket implements Ticket {
 
-    private String benefits = "Ruta guiada.";
-    private String planName = "Silver";
-    private String price = "$5 USD por persona";
+    private final String benefits = "Ruta guiada.";
+    private final String planName = "Silver";
+    private final String price = "$5 USD por persona";
     private String visiterAmmount = "";
     private String inTime = "";
     private String outTime = "";
