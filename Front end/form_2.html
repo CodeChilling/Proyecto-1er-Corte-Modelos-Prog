@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ZooTycon</title>
+        <link rel="icon"  type="image/png" href="https://img.freepik.com/vector-gratis/vector-zoologico-animal_74440-1792.jpg?size=626&ext=jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/form_style.css">
+    </head>
+    <body>
+       
+        <div class="container">
+            <form action="PlanDirector" class="form">
+                <div class="form-header">
+                    <h1 class="form-title"><span>Zootycon</span></h1>
+                    <h3 class="form-title"><span>Datos anteriores</span></h3>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight" class="form-label">Plan escogido anteriormente: </label>
+                    
+                        <select class="form-control list" id="selection_plan" name="selection_plan">
+                            <option value="3">Silver</option>
+                            <option value="2">Golden</option>
+                            <option value="1">Platinum</option>
+                        </select>
+                </div> 
+
+                <label for="time_in" class="form-label">Desde(Fecha antigua): </label>
+                <input type="text" class="form-input" placeholder="" name="time_in" id="time_in" required>
+
+                <label for="time_out" class="form-label">Hasta(Fecha antigua):</label>
+                <input type="text" class="form-input" placeholder="" name="time_out" id="time_out" required>
+
+                <label for="visiter_ammount" class="form-label">Cantidad de visitantes(Dato anterior):</label>
+                <input type="text" class="form-input" placeholder="" name="visiter_ammount" id="visiter_ammount" required>
+
+                <input type="submit" value="Seguramente Esta SI ES" class="button-submit">
+
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

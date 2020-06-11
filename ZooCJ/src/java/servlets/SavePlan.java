@@ -53,20 +53,49 @@ public class SavePlan extends HttpServlet {
                     out.println("<!DOCTYPE html>");
                     out.println("<html>");
                     out.println("<head>");
-                    out.println("<title>Plan</title>");            
+                    out.println("<head>\n" +
+                                "        <meta charset=\"UTF-8\">\n" +
+                                "        <title>ZooTycon</title>\n" +
+                                "        <link rel=\"icon\"  type=\"image/png\" href=\"https://img.freepik.com/vector-gratis/vector-zoologico-animal_74440-1792.jpg?size=626&ext=jpg\">\n" +
+                                "        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\n" +
+                                "        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/form_style.css\">\n");
                     out.println("</head>");
                     out.println("<body>");
-                    out.println("<form action=\"PlanDirector\" method=\"get\" id=\"form\" enctype=\"multipart/form-data\">" + 
-                                "<select name=\"selection_plan\" id=\"selection_plan\" placeholder=\"Select your favorite plan:\"required>"
-                                +"<option id=\"op1\" value=\"3\">Silver</option>\n"
-                                +"<option id=\"op2\" value=\"2\">Golden</option>\n" 
-                                +"<option id=\"op3\" value=\"1\">Platinum</option> "
-                                +"</select>"
-                                +"<p type=\"Arrival time:\"><input name=\"time_in\" id=\"time_in\" placeholder=\"Arrival time\" required></input></p>"
-                                +"<p type=\"Exit time:\"><input name=\"time_out\" id=\"time_out\" placeholder=\"Exit time\" required></input></p>"
-                                +"<p type=\"Visiters ammount:\"><input name=\"visiter_ammount\" id=\"visiter_ammount\" placeholder=\"Visiters ammount\" required></input></p>"
-                                +"<button>Submit</button>"
-                                + "</form>");
+                    out.println("        <div class=\"container\">\n" +
+                    "            <form action=\"PlanDirector\" class=\"form\">\n" +
+                    "                <div class=\"form-header\">\n" +
+                    "                    <h1 class=\"form-title\"><span>Zootycon</span></h1>\n" +
+                    "                    <h3 class=\"form-title\"><span>Reserva tu Estadia</span></h3>\n" +
+                    "                </div>\n" +
+                    "\n" +
+                    "                <div class=\"form-group\">\n" +
+                    "                    <label for=\"weight\" class=\"form-label\">¿Que plan deseas?</label>\n" +
+                    "                    \n" +
+                    "                        <select class=\"form-control list\" id=\"selection_plan\" name=\"selection_plan\">\n" +
+                    "                            <option value=\"3\">Silver</option>\n" +
+                    "                            <option value=\"2\">Golden</option>\n" +
+                    "                            <option value=\"1\">Platinum</option>\n" +
+                    "                        </select>\n" +
+                    "                </div> \n" +
+                    "\n" +
+                    "                <label for=\"time_in\" class=\"form-label\">Desde:</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\"Digita la fecha de tu llegada\" name=\"time_in\" id=\"time_in\" required>\n" +
+                    "\n" +
+                    "                <label for=\"time_out\" class=\"form-label\">Hasta:</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\"Digita la fecha de tu salida\" name=\"time_out\" id=\"time_out\" required>\n" +
+                    "\n" +
+                    "                <label for=\"visiter_ammount\" class=\"form-label\">Cantidad de visitantes:</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\"Cantidad de personas para la reserva\" name=\"visiter_ammount\" id=\"visiter_ammount\" required>\n" +
+                    "\n" +
+                    "                <input type=\"submit\" value=\"Continuar\" class=\"button-submit\">\n" +
+                    "\n" +
+                    "            </form>\n" +
+                    "        </div>\n" +
+                    "\n" +
+                    "        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n" +
+                    "        <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>\n" +
+                    "        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\" integrity=\"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI\" crossorigin=\"anonymous\"></script>");
+
                     out.println("</body>");
                     out.println("</html>");
                     Instance only = Instance.getInstance();
@@ -76,21 +105,48 @@ public class SavePlan extends HttpServlet {
                     out.println("<!DOCTYPE html>");
                     out.println("<html>");
                     out.println("<head>");
-                    out.println("<title>Plan</title>");            
+                    out.println("        <meta charset=\"UTF-8\">\n" +
+                            "        <title>ZooTycon</title>\n" +
+                            "        <link rel=\"icon\"  type=\"image/png\" href=\"https://img.freepik.com/vector-gratis/vector-zoologico-animal_74440-1792.jpg?size=626&ext=jpg\">\n" +
+                            "        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\n" +
+                            "        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/form_style.css\">");            
                     out.println("</head>");
                     out.println("<body>");
-                    out.println("<form action=\"PlanDirector\" method=\"get\" id=\"form\" enctype=\"multipart/form-data\">Datos anteiores " 
-                                +"<p type=\"Info:\">Actual plan: " +cloned.getPlanName()+ "</p>"
-                                +"<select name=\"selection_plan\" id=\"selection_plan\" placeholder="+cloned.getPlanName()+">"
-                                +"<option id=\"op1\" value=\"3\">Silver</option>\n"
-                                +"<option id=\"op2\" value=\"2\">Golden</option>\n" 
-                                +"<option id=\"op3\" value=\"1\">Platinum</option> "
-                                +"</select>"
-                                +"<p type=\"Arrival time:\">Previously arrival time: <input name=\"time_in\" id=\"time_in\" placeholder=" +cloned.getInTime()+ "></input></p>"
-                                +"<p type=\"Exit time:\">Previously exit time: <input name=\"time_out\" id=\"time_out\" placeholder=" +cloned.getOutTime()+ "></input></p>"
-                                +"<p type=\"Visiters ammount:\">Previously visiters ammount: <input name=\"visiter_ammount\" id=\"visiter_ammount\" placeholder="+cloned.getVisiterAmmount()+"></input></p>"
-                                +"<button>Submit</button>"
-                                + "</form>");
+                    out.println("        <div class=\"container\">\n" +
+                    "            <form action=\"PlanDirector\" class=\"form\">\n" +
+                    "                <div class=\"form-header\">\n" +
+                    "                    <h1 class=\"form-title\"><span>Zootycon</span></h1>\n" +
+                    "                    <h3 class=\"form-title\"><span>Datos anteriores</span></h3>\n" +
+                    "                </div>\n" +
+                    "\n" +
+                    "                <div class=\"form-group\">\n" +
+                    "                    <label for=\"weight\" class=\"form-label\">Plan escogido anteriormente: "+cloned.getPlanName()+"</label>\n" +
+                    "                    \n" +
+                    "                        <select class=\"form-control list\" id=\"selection_plan\" name=\"selection_plan\">\n" +
+                    "                            <option value=\"3\">Silver</option>\n" +
+                    "                            <option value=\"2\">Golden</option>\n" +
+                    "                            <option value=\"1\">Platinum</option>\n" +
+                    "                        </select>\n" +
+                    "                </div> \n" +
+                    "\n" +
+                    "                <label for=\"time_in\" class=\"form-label\">Desde(Fecha antigua): "+cloned.getInTime()+"</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\""+cloned.getInTime()+"\" name=\"time_in\" id=\"time_in\" required>\n" +
+                    "\n" +
+                    "                <label for=\"time_out\" class=\"form-label\">Hasta(Fecha antigua):"+cloned.getOutTime()+"</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\""+cloned.getOutTime()+"\" name=\"time_out\" id=\"time_out\" required>\n" +
+                    "\n" +
+                    "                <label for=\"visiter_ammount\" class=\"form-label\">Cantidad de visitantes(Dato anterior): "+cloned.getVisiterAmmount()+"</label>\n" +
+                    "                <input type=\"text\" class=\"form-input\" placeholder=\""+cloned.getVisiterAmmount()+"\" name=\"visiter_ammount\" id=\"visiter_ammount\" required>\n" +
+                    "\n" +
+                    "                <input type=\"submit\" value=\"Seguramente Esta SI ES\" class=\"button-submit\">\n" +
+                    "\n" +
+                    "            </form>\n" +
+                    "        </div>\n" +
+                    "\n" +
+                    "        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n" +
+                    "        <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>\n" +
+                    "        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\" integrity=\"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI\" crossorigin=\"anonymous\"></script>");
+
                     out.println("</body>");
                     out.println("</html>");
             }

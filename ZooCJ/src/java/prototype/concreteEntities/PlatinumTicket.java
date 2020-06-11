@@ -13,7 +13,7 @@ import prototype.abstractEntities.Ticket;
  * @author jackl
  */
 public class PlatinumTicket implements Ticket{
-    private String benefits="Ruta guiada, acceso ilimitado a zonas de descanso, membresía club ZooCJ, niños menores a 10 años ingresan gratis.";
+    private String benefits="Ruta guiada, acceso ilimitado a zonas de descanso, membresia club ZooCJ, ninos menores a 10 anios ingresan gratis.";
     private String planName="Platinum";
     private String price = "$20 USD por persona";
     private String visiterAmmount = "";
